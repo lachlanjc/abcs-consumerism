@@ -1,0 +1,1 @@
+Capitalist consumption is oriented around producing profit, or excess money, so excess is embedded at every level. Excess money goes into marketing products that become excess consumption for people with excess money to transfer excess money to owners.

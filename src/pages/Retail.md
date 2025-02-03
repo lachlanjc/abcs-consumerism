@@ -1,0 +1,3 @@
+Physical monuments to brands, cathedrals of consumption, places of purchase, the halls of [[Ka-Ching]]s.
+
+If I didn’t care about the impact of my work, I’d consider becoming a retail [[Designer]], making breathtaking window displays and spotless product showcases that inspire wonder. Retail stores are somewhere between an art exercise and an experiment in [[Manipulation]], optimizing every styling and layout choice to drive purchasing intent.

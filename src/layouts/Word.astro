@@ -1,0 +1,29 @@
+---
+import Layout from "./Layout.astro"
+
+const { frontmatter, word, url } = Astro.props
+const title = url.split("/").pop()
+---
+
+<Layout title={title}>
+  <a
+    href="/"
+    class="text-lg opacity-50 transition-opacity hover:opacity-70 title"
+  >
+    &larr; ABCs of Consumerism
+  </a>
+  <h1
+    class="text-4xl mt-4 mb-6 stylized"
+    style={`view-transition-name: ${title};`}
+  >
+    {title}
+    <span class="text-2xl opacity-50 ml-2">
+      ({["Brand", "Justify"].includes(title) ? "verb" : "noun"})
+    </span>
+  </h1>
+  <article
+    class="prose prose-invert prose-lg prose-p:text-pretty prose-p:first-child:text-2xl"
+  >
+    <slot />
+  </article>
+</Layout>
