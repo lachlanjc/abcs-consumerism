@@ -12,7 +12,7 @@ const sortedWords = words.sort((a, b) => {
 
 <Layout>
   <a
-    class="text-white border border-white/40 transition-colors hover:bg-white/10 px-3 py-1 rounded-full -rotate-5 inline-block"
+    class="text-white font-mono tracking-tight border border-white/20 transition-colors hover:bg-white/10 px-3 py-1 inline-block"
     href="https://lachlanjc.com"
   >
     @lachlanjc’s
@@ -34,7 +34,9 @@ const sortedWords = words.sort((a, b) => {
             href={word.url}
             class="grid grid-cols-[1ch_1fr] gap-x-8 py-4 border-t border-white/20 transition-colors hover:bg-white/10"
           >
-            <dt class="opacity-50">{repeatedLetter ? "" : firstLetter}</dt>
+            <dt class="opacity-50 font-mono">
+              {repeatedLetter ? "" : firstLetter}
+            </dt>
             <dd
               class:list={{
                 "line-through opacity-50": word.rawContent() === "",
