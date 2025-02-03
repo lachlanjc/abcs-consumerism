@@ -8,24 +8,24 @@
 @plugin "@tailwindcss/typography";
 
 @font-face {
-  src: url("/fonts/ABCGaisyr-Regular.woff2") format("woff2");
-  font-family: "ABCGaisyr";
+  src: url("/fonts/ABCDailySlabVariableEdu-Light.woff2") format("woff2");
+  font-family: "ABCDailySlab";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("/fonts/ABCGaisyrMonoEdu-Book.woff2") format("woff2");
-  font-family: "ABCGaisyrMono";
+  src: url("/fonts/ABCDailySlabMonoEdu-Light.woff2") format("woff2");
+  font-family: "ABCDailySlabMono";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @theme {
-  --font-serif: "ABCGaisyr", ui-serif, Athelas, Georgia, Cambria,
+  --font-serif: "ABCDailySlab", ui-serif, Athelas, Georgia, Cambria,
     "Times New Roman", Times, serif;
-  --font-mono: "ABCGaisyrMono", ui-monospace, Menlo, Monaco, Consolas,
+  --font-mono: "ABCDailySlabMono", ui-monospace, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
 
