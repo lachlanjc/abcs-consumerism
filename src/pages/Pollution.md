@@ -1,0 +1,1 @@
+Every stage of a product’s life cycle—extracting raw materials, producing, distributing, consuming, disposal—creates pollution of the air, water, ground, and inside the bodies of people surrounding every process. It is one of the many “externalized costs” of consumerism.
