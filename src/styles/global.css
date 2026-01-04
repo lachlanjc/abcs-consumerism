@@ -7,44 +7,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@font-face {
-  font-family: SlabFallback;
-  src: local("Georgia");
-  ascent-override: 83%;
-  descent-override: 21.9%;
-  line-gap-override: 0%;
-  size-adjust: 115.31%;
-}
-
-@font-face {
-  font-family: SlabMonoFallback;
-  src: local("Courier New");
-  ascent-override: 84.4%;
-  descent-override: 25.4%;
-  line-gap-override: 0%;
-  size-adjust: 109.98%;
-}
-
-@font-face {
-  src: url("/fonts/ABCDailySlabVariableEdu-Light.woff2") format("woff2");
-  font-family: "ABCDailySlab";
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/fonts/ABCDailySlabMonoEdu-Light.woff2") format("woff2");
-  font-family: "ABCDailySlabMono";
-  font-style: normal;
-  font-display: swap;
-}
-
-@theme {
-  --font-serif: "ABCDailySlab", SlabFallback, ui-serif, Athelas, Georgia,
-    Cambria, "Times New Roman", Times, serif;
-  --font-mono: "ABCDailySlabMono", SlabMonoFallback, ui-monospace, Menlo,
-    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
 @view-transition {
   navigation: auto;
 }
