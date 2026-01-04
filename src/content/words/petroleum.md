@@ -1,1 +1,4 @@
+---
+title: "Petroleum"
+---
 Every step of my consumption process is supported by petroleum: sitting in a [[Plastic]] seat on a kerosene-powered jet to visit cities powered by [imported petroleum/gas products](https://flareup.vercel.app) to buy plastic goods in plastic bags. The fossil fuel business model has successfully embedded them in the embodied materials of essentially every product in the world, from the inks of the labels to the packaging to the transportation to the HVAC of the distribution warehouses to the trash bags of the retail stores disposing of the plastic wrappings.

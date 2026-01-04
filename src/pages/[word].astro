@@ -1,8 +1,18 @@
 ---
-import Layout from "./Layout.astro"
+import { getCollection, render } from "astro:content"
+import Layout from "../layouts/Layout.astro"
 
-const { url } = Astro.props
-const title = url.split("/").pop()
+export async function getStaticPaths() {
+  const words = await getCollection("words")
+  return words.map((entry) => ({
+    params: { word: entry.id },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const title = entry.data.title
 ---
 
 <Layout title={title}>
@@ -18,12 +28,12 @@ const title = url.split("/").pop()
   >
     {title}
     <span class="text-2xl opacity-50 font-mono ml-2">
-      {["Brand", "Justify", "Omit"].includes(title) ? "verb" : "noun"}
+      {entry.data.type}
     </span>
   </h1>
   <article
     class="prose prose-invert prose-lg prose-p:text-pretty prose-blockquote:font-mono prose-a:font-medium prose-hr:my-8"
   >
-    <slot />
+    <Content />
   </article>
 </Layout>

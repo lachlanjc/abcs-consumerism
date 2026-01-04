@@ -1,13 +1,9 @@
 ---
+import { getCollection } from "astro:content"
 import Layout from "../layouts/Layout.astro"
-// const words = Object.values(import.meta.glob("./*.md", { eager: true }))
 
-const words = await Astro.glob("./[A-Z]*.md")
-const sortedWords = words.sort((a, b) => {
-  const aTitle = a.url?.split("/").pop() || ""
-  const bTitle = b.url?.split("/").pop() || ""
-  return aTitle.localeCompare(bTitle)
-})
+const words = await getCollection("words")
+const sortedWords = words.sort((a, b) => a.data.title.localeCompare(b.data.title))
 ---
 
 <Layout>
@@ -25,13 +21,13 @@ const sortedWords = words.sort((a, b) => {
   <dl class="text-4xl mt-12">
     {
       sortedWords.map((word, i) => {
-        const title = word.url?.split("/").pop() || ""
-        const firstLetter = title.split("")[0]
+        const title = word.data.title
+        const firstLetter = title[0]
         const repeatedLetter =
-          i > 0 && sortedWords[i - 1].url?.split("/").pop()?.[0] === firstLetter
+          i > 0 && sortedWords[i - 1].data.title[0] === firstLetter
         return (
           <a
-            href={word.url}
+            href={`/${word.id}`}
             class="grid grid-cols-[1ch_1fr] gap-x-8 py-4 border-t border-white/20 transition-colors hover:bg-white/10"
           >
             <dt class="opacity-50 font-mono">
@@ -39,7 +35,7 @@ const sortedWords = words.sort((a, b) => {
             </dt>
             <dd
               class:list={{
-                "line-through opacity-50": word.rawContent() === "",
+                "line-through opacity-50": !word.body?.trim(),
                 stylized: true,
               }}
               style={`view-transition-name: ${title};`}

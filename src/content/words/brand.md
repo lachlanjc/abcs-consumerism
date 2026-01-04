@@ -1,3 +1,7 @@
+---
+title: "Brand"
+type: verb
+---
 To mark the creator of the object, centralizing admiration and building a relationship of seeing/consuming more from that creator over time.
 
 To elevate an object out of its mere material existence to the pantheon of known entities.

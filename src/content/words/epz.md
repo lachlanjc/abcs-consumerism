@@ -1,3 +1,6 @@
+---
+title: "EPZ"
+---
 Areas of other countries we’ve configured to exploit economically for producing our consumer goods.
 
 <cite>F. Wu, in [International Encyclopedia of Human Geography](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/export-processing-zone), 2009</cite>:

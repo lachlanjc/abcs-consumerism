@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config"
 import tailwindcss from "@tailwindcss/vite"
 import remarkWikiLink from "remark-wiki-link"
-import wordProcessing from "./src/word-processing"
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,11 +13,10 @@ export default defineConfig({
         remarkWikiLink,
         {
           aliasDivider: "|",
-          pageResolver: (name) => [name.replace(/ /g, "-")],
-          hrefTemplate: (href) => `/${href}`,
+          pageResolver: (name) => [name.toLowerCase().replace(/ /g, "-")],
+          hrefTemplate: (permalink) => `/${permalink}`,
         },
       ],
-      wordProcessing,
     ],
   },
 })

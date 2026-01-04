@@ -1,3 +1,6 @@
+---
+title: "Vintage"
+---
 A synonym for thrifting/buying anything second-hand, no matter its age; a process of [[Curation]].
 
 (I often run into “H&M from a few months ago” at “vintage” stores, and many of these stores, like Buffalo Exchange, tuck in new items to diversify their revenue streams.)
