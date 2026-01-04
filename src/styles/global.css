@@ -60,6 +60,10 @@ body {
   view-transition-name: title;
 }
 
+.prose {
+  hanging-punctuation: first;
+}
+
 /* .stylized {
   font-feature-settings: "swsh";
   font-feature-settings: "dlig";
